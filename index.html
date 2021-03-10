@@ -1,58 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid Basics</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid_wrapper">
-        <header id="main_header">
-            <h1>CSS Basics</h1>
-        </header>
-        <nav>
-            <a href="" class="basic_link_style">Home</a>
-            <a href="" class="basic_link_style">Contact Us</a>
-            <a href="" class="basic_link_style">About</a>
-            <div class="menu_dropdown_container">
-                <button class="menu_dropdown basic_link_style">Menu</button>
-                <a href="" class="basic_link_style hidden_menu_link">Home</a>
-                <a href="" class="basic_link_style hidden_menu_link">Contact Us</a>
-                <a href="" class="basic_link_style hidden_menu_link">About</a>
-            </div>
-        </nav>
-        <div class="box box1">Box 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia possimus quae nesciunt dicta consectetur! Aut cum ullam aspernatur, officia blanditiis aliquam eaque quas asperiores, in deleniti amet enim possimus. Cumque iste, vero id, deleniti omnis a adipisci pariatur natus qui aspernatur eveniet sunt veritatis voluptatem incidunt? Harum voluptates ex, fugit saepe perspiciatis distinctio. Temporibus, alias quis explicabo similique eaque ducimus magnam aperiam hic a blanditiis dicta nemo, reiciendis fuga laudantium, sapiente vitae assumenda molestiae sequi officia mollitia? Dolorum aliquam repudiandae, voluptatibus eligendi blanditiis reiciendis error. Quasi deleniti nam dolorum quas voluptates, facilis repellendus minus iste et accusantium ex ipsam nisi incidunt earum aut, placeat aspernatur molestias debitis, quaerat ipsum saepe! Repellendus assumenda fuga tempora aperiam sed beatae dolor, praesentium vel quaerat voluptatum inventore molestias velit eveniet, distinctio, exercitationem architecto hic doloribus dignissimos soluta. Fugit a aspernatur, blanditiis, nihil odio magnam ipsum quae nesciunt quaerat, obcaecati sapiente saepe dolorem placeat aperiam.</div>
-        <div class="box box2">Box 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem perspiciatis in dicta adipisci laudantium itaque ut, deserunt tempore quis voluptatum quasi cupiditate vitae eligendi eveniet minus ducimus repudiandae aperiam sed dolorum quos. Obcaecati consequatur, nihil nesciunt aut nisi officiis.</div>
-        <div class="box box3">Box 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsam odit perspiciatis iusto obcaecati quibusdam.</div>
-        <div class="box box4">Box 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero, similique iusto quo beatae laboriosam perferendis quis quas dicta adipisci unde rem aspernatur reiciendis voluptas impedit, voluptatum ipsum vel culpa dolores labore, eveniet minima id. Porro, nihil. Quae, voluptas dolorem?</div>
-        <div class="box box5">Box 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia possimus quae nesciunt dicta consectetur! Aut cum ullam aspernatur, officia blanditiis aliquam eaque quas asperiores, in deleniti amet enim possimus. Cumque iste, vero id, deleniti omnis a adipisci pariatur natus qui aspernatur eveniet sunt veritatis voluptatem incidunt? Harum voluptates ex, fugit saepe perspiciatis distinctio. Temporibus, alias quis explicabo similique eaque ducimus magnam aperiam hic a blanditiis dicta nemo, reiciendis fuga laudantium, sapiente vitae assumenda molestiae sequi officia mollitia? Dolorum aliquam repudiandae, voluptatibus eligendi blanditiis reiciendis error. Quasi deleniti nam dolorum quas voluptates, facilis repellendus minus iste et accusantium ex ipsam nisi incidunt earum aut, placeat aspernatur molestias debitis, quaerat ipsum saepe! Repellendus assumenda fuga tempora aperiam sed beatae dolor, praesentium vel quaerat voluptatum inventore molestias velit eveniet, distinctio, exercitationem architecto hic doloribus dignissimos soluta. Fugit a aspernatur, blanditiis, nihil odio magnam ipsum quae nesciunt quaerat, obcaecati sapiente saepe dolorem placeat aperiam.</div>
-        <div class="box box6">Box 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem perspiciatis in dicta adipisci laudantium itaque ut, deserunt tempore quis voluptatum quasi cupiditate vitae eligendi eveniet minus ducimus repudiandae aperiam sed dolorum quos. Obcaecati consequatur, nihil nesciunt aut nisi officiis.</div>
-        <div class="box box7">Box 7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsam odit perspiciatis iusto obcaecati quibusdam.</div>
-        <div class="box box8">Box 8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero, similique iusto quo beatae laboriosam perferendis quis quas dicta adipisci unde rem aspernatur reiciendis voluptas impedit, voluptatum ipsum vel culpa dolores labore, eveniet minima id. Porro, nihil. Quae, voluptas dolorem?</div>
-        <footer>
-            <div>
-                <h3>Index</h3>
-                <a href="">Home</a>
-                <a href="">Contact Us</a>
-                <a href="">More</a>
-            </div>
-            <div>
-                <h3>Contact Us</h3>
-                <a href="">Email</a>
-                <a href="">Phone</a>
-                <a href="">Text</a>
-            </div>
-            <div>
-                <h3>More</h3>
-                <a href="">Lorem</a>
-                <a href="">Ipsum</a>
-                <a href="">Id</a>
-            </div>
-        </footer>
+      <header id="main_header">
+        <h1>CSS Basics</h1>
+      </header>
+      <nav>
+        <a href="" class="basic_link_style">Homeee</a>
+        <a href="" class="basic_link_style">Contact Us</a>
+        <a href="" class="basic_link_style">About</a>
+        <div class="menu_dropdown_container">
+          <button class="menu_dropdown basic_link_style">Menu</button>
+          <a href="" class="basic_link_style hidden_menu_link">Home</a>
+          <a href="" class="basic_link_style hidden_menu_link">Contact Us</a>
+          <a href="" class="basic_link_style hidden_menu_link">About</a>
+        </div>
+      </nav>
+      <div class="box box1">
+        Box 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+        possimus quae nesciunt dicta consectetur! Aut cum ullam aspernatur,
+        officia blanditiis aliquam eaque quas asperiores, in deleniti amet enim
+        possimus. Cumque iste, vero id, deleniti omnis a adipisci pariatur natus
+        qui aspernatur eveniet sunt veritatis voluptatem incidunt? Harum
+        voluptates ex, fugit saepe perspiciatis distinctio. Temporibus, alias
+        quis explicabo similique eaque ducimus magnam aperiam hic a blanditiis
+        dicta nemo, reiciendis fuga laudantium, sapiente vitae assumenda
+        molestiae sequi officia mollitia? Dolorum aliquam repudiandae,
+        voluptatibus eligendi blanditiis reiciendis error. Quasi deleniti nam
+        dolorum quas voluptates, facilis repellendus minus iste et accusantium
+        ex ipsam nisi incidunt earum aut, placeat aspernatur molestias debitis,
+        quaerat ipsum saepe! Repellendus assumenda fuga tempora aperiam sed
+        beatae dolor, praesentium vel quaerat voluptatum inventore molestias
+        velit eveniet, distinctio, exercitationem architecto hic doloribus
+        dignissimos soluta. Fugit a aspernatur, blanditiis, nihil odio magnam
+        ipsum quae nesciunt quaerat, obcaecati sapiente saepe dolorem placeat
+        aperiam.
+      </div>
+      <div class="box box2">
+        Box 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+        voluptatem perspiciatis in dicta adipisci laudantium itaque ut, deserunt
+        tempore quis voluptatum quasi cupiditate vitae eligendi eveniet minus
+        ducimus repudiandae aperiam sed dolorum quos. Obcaecati consequatur,
+        nihil nesciunt aut nisi officiis.
+      </div>
+      <div class="box box3">
+        Box 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+        ipsam odit perspiciatis iusto obcaecati quibusdam.
+      </div>
+      <div class="box box4">
+        Box 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero,
+        similique iusto quo beatae laboriosam perferendis quis quas dicta
+        adipisci unde rem aspernatur reiciendis voluptas impedit, voluptatum
+        ipsum vel culpa dolores labore, eveniet minima id. Porro, nihil. Quae,
+        voluptas dolorem?
+      </div>
+      <div class="box box5">
+        Box 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+        possimus quae nesciunt dicta consectetur! Aut cum ullam aspernatur,
+        officia blanditiis aliquam eaque quas asperiores, in deleniti amet enim
+        possimus. Cumque iste, vero id, deleniti omnis a adipisci pariatur natus
+        qui aspernatur eveniet sunt veritatis voluptatem incidunt? Harum
+        voluptates ex, fugit saepe perspiciatis distinctio. Temporibus, alias
+        quis explicabo similique eaque ducimus magnam aperiam hic a blanditiis
+        dicta nemo, reiciendis fuga laudantium, sapiente vitae assumenda
+        molestiae sequi officia mollitia? Dolorum aliquam repudiandae,
+        voluptatibus eligendi blanditiis reiciendis error. Quasi deleniti nam
+        dolorum quas voluptates, facilis repellendus minus iste et accusantium
+        ex ipsam nisi incidunt earum aut, placeat aspernatur molestias debitis,
+        quaerat ipsum saepe! Repellendus assumenda fuga tempora aperiam sed
+        beatae dolor, praesentium vel quaerat voluptatum inventore molestias
+        velit eveniet, distinctio, exercitationem architecto hic doloribus
+        dignissimos soluta. Fugit a aspernatur, blanditiis, nihil odio magnam
+        ipsum quae nesciunt quaerat, obcaecati sapiente saepe dolorem placeat
+        aperiam.
+      </div>
+      <div class="box box6">
+        Box 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+        voluptatem perspiciatis in dicta adipisci laudantium itaque ut, deserunt
+        tempore quis voluptatum quasi cupiditate vitae eligendi eveniet minus
+        ducimus repudiandae aperiam sed dolorum quos. Obcaecati consequatur,
+        nihil nesciunt aut nisi officiis.
+      </div>
+      <div class="box box7">
+        Box 7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+        ipsam odit perspiciatis iusto obcaecati quibusdam.
+      </div>
+      <div class="box box8">
+        Box 8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero,
+        similique iusto quo beatae laboriosam perferendis quis quas dicta
+        adipisci unde rem aspernatur reiciendis voluptas impedit, voluptatum
+        ipsum vel culpa dolores labore, eveniet minima id. Porro, nihil. Quae,
+        voluptas dolorem?
+      </div>
+      <footer>
+        <div>
+          <h3>Index</h3>
+          <a href="">Home</a>
+          <a href="">Contact Us</a>
+          <a href="">More</a>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <a href="">Email</a>
+          <a href="">Phone</a>
+          <a href="">Text</a>
+        </div>
+        <div>
+          <h3>More</h3>
+          <a href="">Lorem</a>
+          <a href="">Ipsum</a>
+          <a href="">Id</a>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
